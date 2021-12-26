@@ -1,0 +1,25 @@
+<template>
+    <lightning-card title="Parent child communication" icon-name="custom:custom4c">
+    <div class="slds-m-left_medium">
+         <p>Hi from parent!!</p>
+        <br/>
+        <lightning-button label="call child function" onclick={handleClick}></lightning-button>
+        <p onchildevent={handleChildEvent}>
+            
+           <!-- <c-child child-property=789 onchildevent={handleChildEvent}></c-child> -->
+           <!-- <c-child child-property=789 ></c-child> -->
+           <c-child child-property={parentProp} ></c-child>
+        </p> 
+        <!-- <p> <c-child>content from parent</c-child> </p> -->
+   <!-- <p> 
+         <c-child>
+          <span slot="firstName">Ashish</span>
+          <span slot="lastName">Kumar</span>
+          <span>overwriting the child unname slot </span>
+
+        </c-child>
+     </p> -->
+    </div>
+    </lightning-card>
+</template>
+

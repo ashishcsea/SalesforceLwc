@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Contact detail" icon-name="standard:contact">
+     <div class="slds-m-left_medium" if:true={contact.data}>
+      <p>
+          Name :<!-- {contact.data.fields.Name.value} -->{name}
+      </p>
+      <p>
+          Title :<!-- {contact.data.fields.Title.value} -->{title}
+      </p>
+      <p>
+        Emal :<!-- {contact.data.fields.Email.value} -->{email}
+    </p>
+    <p>
+        Phone :<!-- {contact.data.fields.Phone.value} -->{phone}
+    </p>
+     </div>
+    </lightning-card>
+</template>

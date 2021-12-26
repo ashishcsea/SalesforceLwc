@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="For each demo" icon-name="custom:custom3">
+            <div class="slds-m-left_medium">
+            <!--  <template for:each={products} for:item="product">
+            <p key={id}> 
+              {product}
+            </p>
+             </template>  -->   
+             <template for:each={products} for:item="product">
+               <p key={product.pno}>
+                  {product.pno} :: {product.pname} :: {product.pprice}
+               </p>
+             </template> 
+            </div>
+    </lightning-card>
+</template>

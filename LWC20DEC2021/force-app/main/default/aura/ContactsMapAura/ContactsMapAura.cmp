@@ -1,0 +1,5 @@
+<aura:component implements="flexipage:availableForAllPAgeTypes">
+ <c:contactsMap listView="hidden"/>
+<!-- <aura:attribute name="listView" type="String" value="hidden"/>
+<c:contactsMap listView={!v.listView}/> -->
+</aura:component>	
